@@ -1,0 +1,13 @@
+/home/tiagus/personal/wannabeGame/src/main/java/wannabeGame/Main/Game.java
+/home/tiagus/personal/wannabeGame/src/main/java/wannabeGame/Classes/Tile.java
+/home/tiagus/personal/wannabeGame/src/main/java/wannabeGame/Classes/Entity.java
+/home/tiagus/personal/wannabeGame/src/main/java/wannabeGame/Exceptions/FinishGameException.java
+/home/tiagus/personal/wannabeGame/src/main/java/wannabeGame/Classes/TileInteraction.java
+/home/tiagus/personal/wannabeGame/src/main/java/wannabeGame/Main/Board.java
+/home/tiagus/personal/wannabeGame/src/main/java/wannabeGame/Entities/Player.java
+/home/tiagus/personal/wannabeGame/src/main/java/wannabeGame/Classes/Event.java
+/home/tiagus/personal/wannabeGame/src/main/java/wannabeGame/Exceptions/IllegalActionException.java
+/home/tiagus/personal/wannabeGame/src/main/java/wannabeGame/Events/TheEnd.java
+/home/tiagus/personal/wannabeGame/src/main/java/wannabeGame/Exceptions/MoveBlockedException.java
+/home/tiagus/personal/wannabeGame/src/main/java/wannabeGame/Interfaces/Interactions.java
+/home/tiagus/personal/wannabeGame/src/main/java/wannabeGame/Entities/Enemy.java

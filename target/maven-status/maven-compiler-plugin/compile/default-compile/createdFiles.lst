@@ -1,0 +1,13 @@
+wannabeGame/Main/Board.class
+wannabeGame/Events/TheEnd.class
+wannabeGame/Classes/Tile.class
+wannabeGame/Entities/Player.class
+wannabeGame/Exceptions/IllegalActionException.class
+wannabeGame/Classes/TileInteraction.class
+wannabeGame/Main/Game.class
+wannabeGame/Entities/Enemy.class
+wannabeGame/Exceptions/MoveBlockedException.class
+wannabeGame/Interfaces/Interactions.class
+wannabeGame/Classes/Entity.class
+wannabeGame/Exceptions/FinishGameException.class
+wannabeGame/Classes/Event.class
