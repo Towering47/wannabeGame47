@@ -29,6 +29,6 @@ public class Enemy extends Entity {
 
     @Override
     public String toString() {
-        return "E";
+        return "Enemy Stats\nHP: " + curr_hp + "/" + max_hp + "\nATK: " + atk_power + "\n";
     }
 }

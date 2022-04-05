@@ -13,7 +13,7 @@ public class Board {
     private int pi = 4;
     private int pj = 4;
 
-    private Player player = new Player(5, 100);
+    private Player player = new Player(50, 100);
 
     public Board(int heigth, int width) {
         i_size = heigth;
@@ -29,7 +29,7 @@ public class Board {
                 else if (i == pi && j == pj) {
                     map_matrix[i][j] = new Tile(player,false);
                 }
-                else if (i == i_size-8 && j == 27) {
+                else if (i == 7 && j == 5) {
                         map_matrix[i][j] = new Tile(new Enemy(300, 16),false);
                 }
                 else if (i == i_size-4 && j == j_size-4) {
