@@ -4,9 +4,9 @@ import wannabeGame.Exceptions.*;
 import wannabeGame.Classes.*;
 import wannabeGame.Entities.*;
 
-public class TheEnd extends Event {
+public class End extends Event {
     
-    public TheEnd() {}
+    public End() {}
 
     @Override
     public void interact(Player player) throws FinishGameException {
@@ -15,12 +15,12 @@ public class TheEnd extends Event {
 
     @Override
     public String tileIcon() {
-        return "F";
+        return "Ye";
     }
 
     @Override
     public String toString() {
-        return "F";
+        return "Ye";
     }
     
 }

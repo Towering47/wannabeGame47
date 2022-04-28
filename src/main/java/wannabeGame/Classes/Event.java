@@ -13,7 +13,7 @@ public abstract class Event extends TileInteraction {
 
     @Override
     public String tileIcon() {
-        return "V";
+        return "ERROR";
     }
     
 }

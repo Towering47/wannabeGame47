@@ -20,13 +20,13 @@ public class Tile {
 
     public String toString() {
         if (solid) {
-            return "\u001B[32m"+"▒"+"\u001B[0m";
+            return "\u001B[90m"+"▓▓"+"\u001B[0m";
         }
         else if(interaction != null) {
             return interaction.tileIcon();
         }
         else {
-            return " ";
+            return "  ";
         }
     }
 }

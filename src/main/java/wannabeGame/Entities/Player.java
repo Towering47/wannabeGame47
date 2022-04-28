@@ -10,7 +10,7 @@ public class Player extends Entity {
 
     @Override
     public String tileIcon() {
-        return "P";
+        return "P1";
     }
 
     @Override

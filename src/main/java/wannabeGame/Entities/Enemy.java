@@ -18,13 +18,13 @@ public class Enemy extends Entity {
             return;
         }
         else {
-            throw new FinishGameException("Dead to Enemy");
+            throw new FinishGameException("Dead to Enemy\n");
         }
     }
 
     @Override
     public String tileIcon() {
-        return "\u001B[31m"+"E"+"\u001B[0m";
+        return "\u001B[31m"+"Ø/"+"\u001B[0m";
     }
 
     @Override

@@ -1,5 +1,9 @@
 package wannabeGame.Main;
 
+import java.io.File;  // Import the File class
+import java.io.FileNotFoundException;  // Import this class to handle errors
+import java.util.Scanner; // Import the Scanner class to read text files
+
 import wannabeGame.Exceptions.*;
 import wannabeGame.Classes.*;
 import wannabeGame.Entities.*;
@@ -15,38 +19,51 @@ public class Board {
 
     private Player player = new Player(50, 100);
 
-    public Board(int heigth, int width) {
-        i_size = heigth;
-        j_size = width;
-        map_matrix = new Tile[i_size][j_size];
-
-        for (int i=0;i<i_size;i++){
-            for (int j=0;j<j_size;j++){
-
-                if (i == 0 || i == i_size-1 || j == 0 || j == 1 || j == j_size-2 || j == j_size-1) {
-                    map_matrix[i][j] = new Tile(null,true);
+    public Board(String mapFile) {
+        try {
+            File myObj = new File("src/main/java/wannabeGame/BoardMaps/"+mapFile);
+            Scanner scan = new Scanner(myObj);
+            //map init
+            i_size = Integer.parseInt(scan.nextLine());
+            j_size = Integer.parseInt(scan.nextLine());
+            map_matrix = new Tile[i_size][j_size];
+            //map creation
+            int i= 0,j = 0;
+            while (scan.hasNextLine()) {
+                String line = scan.nextLine();
+                for (int c=0; c < line.length(  ); c++) {
+                    switch(line.charAt(c)) {
+                        case 'W':
+                            map_matrix[i][j++] = new Tile(null,true);
+                            break;
+                        case 'P':
+                            pi = i; pj = j;
+                            map_matrix[i][j++] = new Tile(player,false);
+                            break;
+                        case 'O':
+                            map_matrix[i][j++] = new Tile(new Enemy(300, 16),false);
+                            break;
+                        case 'F':
+                            map_matrix[i][j++] = new Tile(new Fountain(),false);
+                            break;
+                        case 'E': 
+                            map_matrix[i][j++] = new Tile(new End(),false);
+                            break;
+                        case ' ': 
+                            map_matrix[i][j++] = new Tile(null,false);
+                            break;
+                    }                    
                 }
-                else if (i == pi && j == pj) {
-                    map_matrix[i][j] = new Tile(player,false);
-                }
-                else if (i == 7 && j == 5) {
-                        map_matrix[i][j] = new Tile(new Enemy(300, 16),false);
-                }
-                else if (i == i_size-4 && j == j_size-4) {
-                        map_matrix[i][j] = new Tile(new TheEnd(),false);
-                }
-                else {
-                    map_matrix[i][j] = new Tile(null,false);
-                }
-            }   
+                i++; j = 0;                
+            }
+            scan.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("Invalid Map.");
+            e.printStackTrace();
         }
     }
 
     public void movePlayer(char move) throws Exception {
-
-        // WIP MISSING OLD TILE INTERACTION VERIFICATION
-        // if tile is blocked throw exception 
-        // if tile has other tile interaction trigger event
         
         Player player = (Player) map_matrix[pi][pj].getTileInteraction();
         int npi = pi, npj = pj;

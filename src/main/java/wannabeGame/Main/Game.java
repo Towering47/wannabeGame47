@@ -1,4 +1,5 @@
 package wannabeGame.Main;
+import java.io.IOException;
 
 import wannabeGame.Exceptions.*;
 import java.util.*;
@@ -8,9 +9,9 @@ public class Game {
     private Board board;
 	private Scanner scan;
 
-	public Game() {
+	public Game(String mapFile) {
 		/** Initialize Game */
-		board = new Board(15,50);
+		board = new Board(mapFile);
 		scan = new Scanner(System.in);
 	}
 
@@ -44,7 +45,13 @@ public class Game {
 	}
 
 	public static void main(String[] args) {
-		Game g = new Game();
+
+		if (args.length < 1) {
+			System.err.println("Missing Arguments : mvn exec:java -Dexec.args=\"map_XX.txt\"");
+			return;
+		}
+		
+		Game g = new Game(args[0]);
 		g.startGame();
 	}
 }

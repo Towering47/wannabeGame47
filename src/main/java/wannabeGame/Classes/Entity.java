@@ -32,12 +32,7 @@ public abstract class Entity extends TileInteraction {
 
     @Override
     public String tileIcon() {
-        return "T";
-    }
-
-    @Override
-    public String toString() {
-        return "T";
+        return "ERROR";
     }
     
 }
