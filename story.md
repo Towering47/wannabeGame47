@@ -1,10 +1,10 @@
-# STORY 0
+# STORY 0 :thinking:
 
 ## UNIVERSE FOUNDATION
 
 ### Magic : 
 
-defining magic, mana as per usual, mana is magic, its energy, its base of everything.
+defining ==magic==, mana as per usual, mana is magic, its energy, its base of everything.
 mana is the most generic shape of magic, it can exist in many shapes and forms, and be specific to an element,
 be it natural stuff 
 like fire water and such,
@@ -37,10 +37,10 @@ it maybe has 3 enormous continents with large island regions around, big element
 
 ### RANDOM NAMES
 
-Telarin (zone)
-Galladyrn (zone)
+- Telarin (zone)
+- Galladyrn (zone)
 
-###RANDOM IDEAS
+### RANDOM IDEAS
 
 - a mage city and a universital city that fight over whos the best magical city
 
@@ -64,6 +64,10 @@ extremely specific evolutions of certains kinds of magic, like demon magic?
 
 - small piecws of mana shards and mana shard cores can be refined to create rune shards
 
+- religion:
+the idea of a world soul, in planets with high mana levels and big life mana, all of its mana starts reacting and interacting with eachother in at a global scale, creating reactions and balance between each kindnof magic, these more organic feeling reactions and changes are attributed to a world soul which doesnt necessarily exist (like weather gods, natural catastrophes can feel tied to emotions or organic thinking decisions)
+make religion out of world soul
+
 ## evolution of some species:
 ### humanoids :
 - earth bipeds -> got away from earth manashards -> fleshy -> humanoids (no manashards became humans, life manashard became elves ?, reconnect with earth shard -> dwarves, some else ??) (also other aspects would affect species themselves/not manashard exclusive alteration)
@@ -74,8 +78,5 @@ extremely specific evolutions of certains kinds of magic, like demon magic?
 ### water creatures:
 - water elementals + life shard contact -> normal water biodiversity -> other mana shard combinations ? 
 
-### other mana shard origins and combinations ??
-
-the idea of a world soul, in planets with high mana levels and big life mana, all of its mana starts reacting and interacting with eachother in at a global scale, creating reactions and balance between each kindnof magic, these more organic feeling reactions and changes are attributed to a world soul which doesnt necessarily exist (like weather gods, natural catastrophes can feel tied to emotions or organic thinking decisions)
-make religion out of world soul
-
+### other mana shard origins and combinations:
+- ?
